@@ -14,7 +14,7 @@
 
 #define FILEPATH "Desktop/C++/BE_C++"
 
-// exceptions
+// exceptions, sous forme d'énumération afin de facilement en rajouter si besoin
 enum vecterr{mode_err};
 
 // Classe mère des actionneurs
