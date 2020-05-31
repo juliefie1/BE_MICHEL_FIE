@@ -11,11 +11,12 @@ L'alarme et sa LED ainsi que le portail n'ayant pas été simulé réellement, b
 
 Nous avons choisir de simuler à partir du 4ème jour de la semaine 6 pour observer le mode semaine, puis le mode week-end et enfin le mode vacances (semaine 7) en une rapide simulation. Vous observerez donc les changements au fur et à mesure des jours et non au sein des jours. Ces paramètres peuvent cependant être modifiés en ralentissant le temps de simulation.
 
-** AFFICHAGE: 
+** AFFICHAGE:
+
 --- EXTÉRIEUR : valeurs de température et de luminosité extérieure
 --- DATE : jour et semaine actuelle
 --- MODE ACTIF : vacances (vacation), semaine (week) ou week-end
---- ÉTAT DES OBJETS : variant selon l'objet, le mode et l'extérieur.
+--- ÉTAT DES OBJETS : variant selon l'objet, le mode et l'extérieur
 
 Étant donné que les variables globales de l'environnement extérieur simulées varient en permanence, il peut arriver que certaines valeurs s'affichent puis changent avant l'affichage de l'état des objets et peuvent ne pas correspondre. Cela dépend uniquement des paramètres de la simulation. 
 Notre objectif principal étant d'avoir une overview rapide du fonctionnement du système en une simulation.
