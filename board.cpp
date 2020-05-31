@@ -39,11 +39,9 @@ int main(){
     myGate.AddGateKeyboard(&GateKb);
     myGate.AddGateBoard(&esp8266);
     
+    // Création du thread de simulation de l'environnement extérieur
     pthread_t thread_ext_simu;
     
-    //VerifyCode(1234, &esp8266, 3);
-
-    // Création du thread de simulation de l'environnement extérieur
     try{
         if (pthread_create(&thread_ext_simu, NULL, exterior_simulator, nullptr))
           {
@@ -60,9 +58,6 @@ int main(){
             case mode_err:
                 cout << "Erreur de mode" << endl;
                 break;
-//            case keyboard_err:
-//                cout << "Erreur interaction clavier" << endl;
-//                break;
         }
     }
     
