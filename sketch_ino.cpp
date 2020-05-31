@@ -25,24 +25,21 @@ void Board::loop(){
     map<string,string>::iterator it;
     map<string,string> mySM;
     for(i=0;i<10;i++){
-//        // lecture sur la pin 1 : capteur de temperature
+        // lecture sur la pin 1 : capteur de temperature
         val1 = analogRead(1);
-//        sprintf(buf,"temperature %d",val1);
-//        Serial.println(buf);
-//        // lecture sur la pin 2 : capteur de luminosité
+        // lecture sur la pin 2 : capteur de luminosité
         val2 = analogRead(2);
-//        sprintf(buf,"luminosité %d",val2);
-//        Serial.println(buf);
 
         sleep(1);
         sleep(2);
+        
+        // affichage de l'état des objets
+        cout << ReturnStateMap();
         
         // affichage de l'environnement extérieur
         sprintf(buf," EXTÉRIEUR:  %hu °, %hu LUX \n",val1, val2);
         bus.write(1,buf,100);
         
-        // affichage de l'état des objets
-        cout << ReturnStateMap();
     }
 }
 
