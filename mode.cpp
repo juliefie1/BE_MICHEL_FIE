@@ -51,13 +51,6 @@ ostream& operator << (ostream &os, map<string,string> Map){
         cout << it->first << ": " << it->second << endl;
     }
     os << endl;
-    // affichage de l'état des objets
-//    cout << "Portail: " << Map[" Portail "] << endl;
-//    cout << "Alarme: " << "éteinte"<< endl;
-//    cout << "LED: " << "éteinte" << endl;
-//    cout << "Volets : " << Map[" Volets "] << endl;
-//    cout << "Chauffage: " << Map[" Chauffage "] << endl << endl;
-    
     return os;
 }
 
